@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+body, html {
+	background: url('https://i.imgur.com/qfD4Fmz.png') no-repeat fixed center center;
+	font-family: 'Montserrat', sans-serif;
+    -ms-text-size-adjust:100%;
+    -webkit-text-size-adjust:100%
+}
+
+.bg-dark {
+	background-color: rgba(0, 0, 0, 0.7)!important; 
+}
+
+
+.container {
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	height: 100vh;
+
+}
+
+.typed-citation {
+
+	text-shadow: 0 1px 3px #000;
+	color: #fff;
+	font-weight: 900;
+	font-size: 70px;
+	letter-spacing: 0.8px;
+}
+
+
+.citation {
+	font-weight: 300;
+    letter-spacing: 0.8px;
+    line-height: 2.5;
+    margin: 0 0 15px;
+    text-shadow: 0 1px 3px #000;
+    color: #fff;
+    font-size: 16px;
+}
+
+
