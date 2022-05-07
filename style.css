@@ -13,6 +13,12 @@ body, html {
 }
 
 
+.navbar-dark .navbar-nav .nav-link.active {
+	color: lightblue;
+	font-weight: 900;
+	text-shadow: 0 1px 3px #000;
+}
+
 .container {
 	display: flex;
   	justify-content: center;
