@@ -1,114 +1,100 @@
- <!DOCTYPE html>
- <html>
- <head>
- 	<meta charset="utf-8">
- 	<meta name="viewport" content="width=device-width, initial-scale=1">
- 	<title>Tellu's wonderful Journey</title>
- </head>
-
- <style>
-
-  
-    body 
-    {
-      background-image: url('https://i.imgur.com/vYFJld8.png');
-      background-repeat: no-repeat;
-    }
-
-div {
-  width: 200px;
-  height: 200px;
-  display: block;
-  position: relative;
-}
- 
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      background-color:  #570566;
-    }
-
-    li {
-      float: left;
-      border-right:1px solid #bbb;
-    }
-
-    li:last-child {
-      border-right: none;
-    }
-
-    li a {
-      display: block;
-      color: white;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-    }
-
-    li a:hover:not(.active) {
-      background-color: #D62BBA;
-    }
-
-    .active {
-      background-color: #D62BBA;
-    }
-
-
-</style>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+		Tellu's Wonders - Home
+	</title>
 
 
 
- <body>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <ul>
-        <li class="active"><a href="index.html">Home</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="about.html">About me</a></li>
-        <li><a href="register.html">Register</a></li>
+<link rel="stylesheet" type="text/css" href="style.css">
 
-    </ul>
-
-    <hr>
-    <audio controls autoplay>
-        <source src="resources/prelude.mp3">
-    Your browser does not support the audio element.
-    </audio><br>
+<link href="crystal.jpg" rel="icon">
 
 
 
 
- 	<center>
-        <img src="https://i.imgur.com/exrgkOK.png">
-    </center>
 
-        
+</head>
 
+<body>
 
- 	<h2>
-        <p>
-            <font face="Georgia">"Lands that stretched on forever. Skies one could drown in. The heartbeat of nature, silent yet strong. And amidst it all a people. Beacons of light and life. Laughter that warmed my heart like naught else before. <br>
-
-            They are my meaning and my purpose. My love.<br>
-
-            In spite of... or perhaps because of this, I choose to believe... In mankind's potential. In his ability to find a way forward.<br>
-
-            So let there be no way back. From that temptation, I sunder us. No more shall man have wings to bear him to paradise.<br>
-
-            Henceforth, he shall walk."
-        </h2><br></font>
-
-    <h1 face="Georgia" style="text-align:center" ;>
-    "For those I have lost. For those I can yet save." </h1><br>
+	<header>
+		
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	  <div class="container-fluid">
+	    <a class="navbar-brand" href="#"><img src="crystal.jpg" alt="" width="30" height="30" class="d-inline-block align-text-top">Tellu's Wonders</a>
+	   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+	   </button>
 
 
-    <h2 face="Georgia"style="text-align:center";><em>My Warrior of Light, Tellula Phoenix</em></h2>
-    </h2>
+	    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	      <div class="navbar-nav navbar-right">
+	      	<ul class="navbar-nav mr-auto">
+	        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+	        <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
+	        <li class="nav-item"><a class="nav-link" href="#">Music Player</a></li>
+	        <li class="nav-item"><a class="nav-link" href="#">About me</a></li>
+	        <li class="nav-item"><a class="nav-link" href="#">Contact and newsletter</a></li>
+	        </ul>
+	        
+	      </div>
+	    </div>
+	  </div>
 
-        </p>
+		</nav>
 
- 	</body> 
-  	
+	</header>
 
- </html>
+
+	<div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="hero-full-wrapper">
+            <div class="text-content">
+
+            	<h1 class="typed-citation"><span id="typed-strings">
+
+                  <span>For those I have lost...</span>
+                  <span></span>
+                  <span>For those I can yet save...</span>
+                  </span>
+                  <span id="typed"></span>
+              </h1>
+
+			<p class="citation">"Lands that stretched on forever. Skies one could drown in. The heartbeat of nature, silent yet strong. <br>
+            And amidst it all a people. Beacons of light and life. Laughter that warmed my heart like naught else before. <br>
+            They are my meaning and my purpose. My love. <br>
+            In spite of... or perhaps because of this, I choose to believe... In mankind's potential. In his ability to find a way forward. <br>
+            So let there be no way back. From that temptation, I sunder us. <br>
+            No more shall man have wings to bear him to paradise. <br>
+            Henceforth, he shall walk."</p>
+
+			</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  document.addEventListener("DOMContentLoaded", function (event) {
+     type();
+     movingBackgroundImage();
+  });
+</script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script type="text/javascript" src="script.js"></script>
+
+</body>   
+
+</html>
+
+	
