@@ -34,25 +34,27 @@ header {
 
 .typed-citation {
 
-	background-color: rgba(0, 0, 0, 0.4);
-	text-shadow: 0 1px 4px #fff;
+	
+	text-shadow: 0 1px 4px #000;
 	color: #fff;
 	font-weight: 900;
 	font-size: 70px;
 	letter-spacing: 0.8px;
 	margin: 0;
+	padding: 15px;
 }
 
 
 .citation {
-	background-color: rgba(0, 0, 0, 0.4);
+	
 	font-weight: 600;
     letter-spacing: 1px;
     line-height: 2.5;
     margin: 0 0 15px;
-    text-shadow: 0 1px 4px #fff;
+    text-shadow: 0 1px 4px #000;
     color: #fff;
     font-size: 16px;
+    padding: 15px;
 }
 
 
