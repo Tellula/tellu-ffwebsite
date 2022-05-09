@@ -83,7 +83,7 @@ header {
   color: #fff;
   font-weight: 600;
   letter-spacing: 0.3px;
-  margin: 0;
+  margin: 2em;
   padding: 15px;
 }
 
@@ -91,7 +91,7 @@ header {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .image-grid figure {
-  margin-bottom: 0;
+  margin-bottom: 2em;
 }
 
 .image-grid img {
