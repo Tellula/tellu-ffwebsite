@@ -1,60 +1,157 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
+/** BASIC STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+:root {
+  --yellow: #fffbbc;
+  --lightbox: #242424;
+}
 
-body, html {
-	background: url('https://i.imgur.com/qfD4Fmz.png') no-repeat fixed center center;
-	font-family: 'Montserrat', sans-serif;
-    -ms-text-size-adjust:100%;
-    -webkit-text-size-adjust:100%;
-
-
+body,
+html {
+  background: url("https://i.imgur.com/lGe9GZC.jpg") no-repeat fixed center
+    center;
+  font-family: "Montserrat", sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 
 header {
-	 margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .bg-dark {
-	background-color: rgba(0, 0, 0, 0.7)!important; 
+  background-color: rgba(0, 0, 0, 0.7) !important;
 }
 
-
 .navbar-dark .navbar-nav .nav-link.active {
-	color: lightblue;
-	font-weight: 300;
+  color: lightblue;
+  font-weight: 300;
 }
 
 .container {
-	display: flex;
-  	justify-content: center;
-  	align-items: center;
-  	height: 100vh;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .typed-citation {
-
-	
-	text-shadow: 0 1px 4px #000;
-	color: #fff;
-	font-weight: 900;
-	font-size: 70px;
-	letter-spacing: 0.8px;
-	margin: 0;
-	padding: 15px;
+  text-shadow: 0 1px 4px #000;
+  color: #fff;
+  font-weight: 900;
+  font-size: 70px;
+  letter-spacing: 0.8px;
+  margin: 0;
+  padding: 15px;
 }
-
 
 .citation {
-	
-	font-weight: 600;
-    letter-spacing: 1px;
-    line-height: 2.5;
-    margin: 0 0 15px;
-    text-shadow: 0 1px 4px #000;
-    color: #fff;
-    font-size: 16px;
-    padding: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 2.5;
+  margin: 0 0 15px;
+  text-shadow: 0 1px 4px #000;
+  color: #fff;
+  font-size: 16px;
+  padding: 15px;
 }
 
+.notification {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 5px 15px;
+  margin: 0;
+  text-align: center;
+  z-index: 1;
+  background: var(--yellow);
+}
 
+@media (max-width: 700px) {
+  .notification {
+    display: none;
+  }
+}
+
+/*GALLERY*/
+
+.text-center.mb-4 {
+  font-size: 40px;
+  text-shadow: 0 2px 2px #fff;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  margin: 0;
+  padding: 15px;
+}
+
+/* IMAGE GRID STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.image-grid figure {
+  margin-bottom: 0;
+}
+
+.image-grid img {
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.2s;
+  border: 2px solid;
+  border-image: linear-gradient(to top, #282e39, #7e8591) 1;
+}
+
+.image-grid a:hover img {
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.8);
+  border-image: linear-gradient(to top, #9a7a00, #f8d23d) 1;
+}
+
+/* LIGHTBOX STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.lightbox-modal .modal-content {
+  background: var(--lightbox);
+}
+
+.lightbox-modal .btn-close {
+  position: absolute;
+  top: 20px;
+  right: 18px;
+  font-size: 1.2rem;
+  z-index: 10;
+}
+
+.lightbox-modal .modal-body {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  text-align: center;
+}
+
+.lightbox-modal img {
+  width: auto;
+  max-height: 100vh;
+  max-width: 100%;
+}
+
+.lightbox-modal .carousel-caption {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(36, 36, 36, 0.75);
+}
+
+.lightbox-modal .carousel-control-prev,
+.lightbox-modal .carousel-control-next {
+  top: 50%;
+  bottom: auto;
+  transform: translateY(-50%);
+  width: auto;
+}
+
+.lightbox-modal .carousel-control-prev {
+  left: 10px;
+}
+
+.lightbox-modal .carousel-control-next {
+  right: 10px;
+}
