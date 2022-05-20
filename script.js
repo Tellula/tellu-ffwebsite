@@ -5,6 +5,13 @@ const lightboxModal = document.getElementById("lightbox-modal");
 const bsModal = new bootstrap.Modal(lightboxModal);
 const modalBody = document.querySelector(".modal-body .container-fluid");
 
+const typed = new Typed(".typed-strings", {
+  strings: ["For those I have lost...", "For those I can yet save..."],
+  typeSpeed: 50,
+  backSpeed: 50,
+  loop: false,
+});
+
 for (const link of links) {
   link.addEventListener("click", function (e) {
     e.preventDefault();
