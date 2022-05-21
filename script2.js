@@ -11,6 +11,10 @@ var nextButton = document.getElementById("nextButton");
 function onYouTubeIframeAPIReady() {
   player = new YT.Player("player", {
     playerVars: {
+      
+      cc_load_policy: 0,
+      cc_lang_pref: "eng",
+      hl: "eng",
       autoplay: 1, // Auto-play the video on load
       autohide: 1, // Hide video controls when playing
       disablekb: 0 ,
